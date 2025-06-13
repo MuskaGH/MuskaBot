@@ -16,17 +16,6 @@
    - Edit the PATH variable and add `C:\ffmpeg\bin`
    - Restart your command prompt
 
-### macOS:
-```bash
-brew install ffmpeg
-```
-
-### Linux (Ubuntu/Debian):
-```bash
-sudo apt update
-sudo apt install ffmpeg
-```
-
 ## Step 2: Install Python Dependencies
 
 Open a terminal/command prompt in the MuskaBot directory and run:
@@ -77,13 +66,6 @@ Make sure your bot has these permissions:
 python music_bot.py
 ```
 
-You should see:
-```
-[Bot Name] has connected to Discord!
-Music folder: [path to your music folder]
-Found [number] MP3 files
-```
-
 ## Bot Commands
 
 Once the bot is running, you can use these commands in Discord:
@@ -98,48 +80,3 @@ Once the bot is running, you can use these commands in Discord:
 - `!random` - Play a random song
 - `!current` - Show currently playing song
 - `!help_music` - Show help message
-
-## Usage Examples
-
-```
-!play bohemian          # Plays "Bohemian Rhapsody.mp3"
-!play never gonna give  # Plays "Never Gonna Give You Up.mp3"
-!list                   # Shows all available songs
-!random                 # Plays a random song
-```
-
-## Troubleshooting
-
-### "FFmpeg not found" error:
-- Make sure FFmpeg is installed and in your system PATH
-- Try restarting your terminal/command prompt after installation
-
-### Bot doesn't respond:
-- Make sure the bot is online in your Discord server
-- Check that the bot has the necessary permissions
-- Verify your bot token is correct
-
-### Audio doesn't play:
-- Make sure you're in a voice channel when using commands
-- Check that the bot has "Connect" and "Speak" permissions
-- Verify your MP3 files are not corrupted
-
-### "No MP3 files found":
-- Make sure your MP3 files are in the `music` folder
-- Check that the files have the `.mp3` extension
-- Verify the file names don't contain special characters that might cause issues
-
-## Security Notes
-
-- Never share your bot token publicly
-- Consider using environment variables for the token in production
-- Keep your bot token secure and regenerate it if compromised
-
-## Advanced Features (Future Enhancements)
-
-The current bot supports basic music playback. You could extend it with:
-- Queue system for multiple songs
-- Volume control
-- Playlist support
-- Web interface
-- Database integration for user preferences
