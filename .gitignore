@@ -136,6 +136,10 @@ ENV/
 env.bak/
 venv.bak/
 
+# Discord Bot Token (security)
+.env
+config_local.py
+
 # Spyder project settings
 .spyderproject
 .spyproject
